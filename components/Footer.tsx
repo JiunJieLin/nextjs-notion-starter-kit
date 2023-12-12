@@ -37,6 +37,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
+      <div className={styles.social}></div>
     </footer>
   )
 }
