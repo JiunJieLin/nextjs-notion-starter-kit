@@ -1,11 +1,8 @@
 import * as React from 'react'
-
-import { FaMastodon, FaZhihu } from '@react-icons/all-files/fa'
-import { IoMoonSharp, IoSunnyOutline } from '@react-icons/all-files/io5'
-
+import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
-
 import styles from './styles.module.css'
 
 export const FooterImpl: React.FC = () => {
@@ -42,29 +39,7 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
-      <div className={styles.social}>
-        {config.mastodon && (
-          <a
-            className={styles.mastodon}
-            href={config.mastodon}
-            title={`Mastodon ${config.getMastodonHandle()}`}
-            rel='me'
-          >
-            <FaMastodon />
-          </a>
-        )}
-
-        {config.zhihu && (
-          <a
-            className={styles.zhihu}
-            href={`https://zhihu.com/people/${config.zhihu}`}
-            title={`Zhihu @${config.zhihu}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaZhihu />
-          </a>
-        )}
+     
       </div>
     </footer>
   )
