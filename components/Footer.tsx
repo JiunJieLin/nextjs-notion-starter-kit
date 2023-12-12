@@ -38,9 +38,6 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
-
-     
-      </div>
     </footer>
   )
 }
